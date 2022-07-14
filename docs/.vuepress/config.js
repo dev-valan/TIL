@@ -38,6 +38,12 @@ module.exports = {
                 title: 'JavaScript',
                 children: CONST.JavaScriptList
             },
+
+            {
+                title: 'Git',
+                children: CONST.Git
+            },
+
             {
                 title: 'Debug',
                 children: CONST.Debug
