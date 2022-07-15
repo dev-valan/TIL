@@ -11,7 +11,7 @@ exports.JavaScriptList = [
 exports.Debug = [
     {
         "title":"Flutter",
-        "path":"Debug/Flutter"
+        "path":"Debug/Flutter",
     },
     {
         "title":"ReactJS",

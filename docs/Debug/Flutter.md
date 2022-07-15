@@ -1,4 +1,78 @@
+
+## addPostFrameCallback
+
+<p align="right">작성일 : 22.07.15</p>
+
+### Error
+
+```Dart
+@override
+Widget build(BuildContext context) {
+    
+    return BlocBuilder<Bloc, State> {
+    
+        switch (state.status) {
+            case A :
+                return Loading();
+            
+            case B :
+                ScaffoldMessenger.of(context)
+                    ..hideCurrentSnackBar()
+                    ..showSnackBar("test");
+                break;
+        }
+    }
+}
+```
+
+```Dart
+This ScaffoldMessenger widget cannot be marked as needing to build 
+because the framework is already in the process of building widgets. 
+A widget can be marked as needing to be built during the build phase only 
+if one of its ancestors is currently building. 
+This exception is allowed because the framework builds parent widgets 
+before children, which means a dirty descendant will always be built. 
+Otherwise, the framework might not visit this widget during this build phase.
+```
+
+BlocBuilder 에서 Bloc State 가 변경되면,
+
+ScaffoldMessenger 를 사용하여 토스트 창을 띄워주려는 상황에서 에러 발생.
+
+
+### Cause
+
+::: tip
+Build 가 끝난기 전에, setState 혹은 markNeedsBuild 가 호출되어 발생하는 에러이다.
+:::
+
+### Solution
+> build 가 다 끝난 시점에서 callback 함수를 호출하여 해결
+> 
+> widgetsBinding.instance.addPostFrameCallback 을 사용
+
+```dart
+    case B :
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+            ScaffoldMessenger.of(context)
+                ..hideCurrentSnackBar()
+                ..showSnackBar("test");
+            });
+        break;
+```
+
+###
+
+
+----
+
+###
+
+
+
 ## Dart null safety
+
+<p align="right">작성일 : 22.07.14</p>
 
 ### Error
 
@@ -46,3 +120,4 @@ Dart 에서는 반환문이 존재하지 않으면, null 을 반환하는 것과
 > function 에서 null 이 반환되지 않도록 해주면 쉽게 해결된다.
 > 빈 widget 을 return 해주는 것으로 처리 완료.
 
+###
