@@ -1,7 +1,7 @@
 exports.JavaScriptList = [
     {
-        "title":"js",
-        "path":"JavaScript/typescript"
+        "title":"location.href VS location.replace",
+        "path":"JavaScript/replace-vs-href"
     },
 ];
 

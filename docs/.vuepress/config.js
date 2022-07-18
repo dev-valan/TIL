@@ -36,7 +36,7 @@ module.exports = {
         sidebar: [
             {
                 title: 'JavaScript',
-                children: CONST.JavaScriptList
+                children: CONST.JavaScriptList,
             },
 
             {
