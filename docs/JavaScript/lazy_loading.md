@@ -32,18 +32,16 @@
 ###
 
 
-
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/107361759/179777717-a1858535-d890-48c2-a206-03fc866bd4fb.png" alt="적용 전">
-< 적용 전 >
+<b>< 적용 전 ></b>
 </p>
 
 ###
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/107361759/179778042-5bf73b40-2d27-431f-b468-a120abc13dd9.png" alt="적용 후">
-< 적용 후 >
+<b>< 적용 후 ></b>
 </p>
 
 ###
@@ -53,7 +51,3 @@
 > #### 적용 전 : 약 7.29s
 > 
 > #### 적용 후 : 약 0.6s
- 
- 
-
-###
