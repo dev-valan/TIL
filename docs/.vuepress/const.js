@@ -1,5 +1,9 @@
 exports.JavaScriptList = [
     {
+        "title":"Lazy Loading 적용기",
+        "path":"JavaScript/lazy_loading"
+    },
+    {
         "title":"location.href VS location.replace",
         "path":"JavaScript/replace-vs-href"
     },
