@@ -27,6 +27,10 @@ exports.Debug = [
 
 exports.Git = [
     {
+        "title":"깃헙에서 Public Repo 를 Private Repo 로 Fork 하는 방법",
+        "path":"Git/forked_public_to_private"
+    },
+    {
         "title":"잔디가 심어지지 않을 때",
         "path":"Git/edit_local_config"
     },
