@@ -1,3 +1,67 @@
+## Widget child 속성에서 if / else 사용!?
+
+<p align="right">작성일 : 22.07.21</p>
+
+### Error
+
+```Dart{7}
+@override
+Widget build(BuildContext context) {
+    
+    return GestureDetector(
+        ...
+        child:
+            if (true){
+                return Container();
+            }else{
+                return SizedBox();
+            }
+    )
+}
+```
+
+```Dart
+The argument type 'dynamic' can't be 
+assigned to the parameter type 'Widget?'.
+```
+
+Widget 의 child 속성 안에서 if 문으로 분기하려고 할 때 에러 발생.
+간단한 부분이지만, 자꾸 까먹고 시간 잡아먹어서 기억하기 위해 남김.
+
+### Cause
+
+::: tip
+if ... else 문은 Widget의 child 속성 안에 직접 배치할 수 없음.
+:::
+
+### Solution
+> : 삼항연산자를 사용
+>
+> : 다른 함수로 선언해서 사용
+> 
+> : LayoutBuilder 사용
+> 
+> : Children 속성에 사용
+> 
+> => 주로 삼항연산자를 사용해서 해결하는게 간편하다.
+
+```dart
+@override
+Widget build(BuildContext context) {
+    
+    return GestureDetector(
+        ...
+        child:
+            true ? Container() : SizedBox();
+    )
+}
+```
+
+###
+----
+###
+
+
 
 ## addPostFrameCallback
 
