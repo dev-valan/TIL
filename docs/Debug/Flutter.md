@@ -1,3 +1,84 @@
+## Could not find the correct Provider above this Widget
+
+<p align="right">작성일 : 22.07.25</p>
+
+### Error
+
+
+```Dart{15}
+
+class _SuccessDialogLayout extends StatelessWidget{
+  const _SuccessDialogLayout({Key? key}) : super(key : key);
+
+  @override
+  Widget build(BuildContext context) {
+
+     return GestureDetector(
+          onTap: () => Navigator.pop(context),
+          child:
+              //...(중략)...
+              
+              GestureDetector(
+                onTap: () {
+                  context.read<BLOC>().add(BLOC'S EVENT);
+              
+              //...(중략)...
+
+```
+
+```Dart
+Error: Could not find the correct Provider<BLOC> above this Widget
+
+This happens because you used a `BuildContext` that does not include the provider
+of your choice. There are a few common scenarios:
+```
+
+ShowDialog 로 생성한 다이얼로그에서, Bloc Event 를 호출할 때 발생했다.
+
+### Cause
+
+::: tip
+다이얼로그 위젯의 상위 위젯에 사용하고자 하는 Bloc 이 Provider 에 명시되지 않아서 발생
+:::
+
+![image](https://user-images.githubusercontent.com/107361759/180795517-0f979b8f-ae18-43fa-8ac8-b31e6361ca59.png)
+
+HomeScreen 이라는 위젯 안에 Provider 들이 명시 되어 있어서,
+Dialog 안에서는 해당 Bloc을 사용할 수 없어서 발생한 에러이다.
+
+
+### Solution
+> 가장 좋은 방법은, Provider를 HomeScreen 이 아닌, 더 상단의 위젯에 선언하는 것이다.
+>
+> But, 여건 상 임시로 Dialog 위젯 안에 BlocBuilder 를 통해 Bloc과 State를 명시해주는걸로 해결.
+
+```dart{7-8}
+class _SuccessDialogLayout extends StatelessWidget{
+  const _SuccessDialogLayout({Key? key}) : super(key : key);
+
+  @override
+  Widget build(BuildContext context) {
+
+    return BlocBuilder<ExternalItemBloc, ExternalItemState>(
+        builder: (context, state) {
+        
+         return GestureDetector(
+              onTap: () => Navigator.pop(context),
+              child:
+                  //...(중략)...
+                  
+                  GestureDetector(
+                    onTap: () {
+                      context.read<BLOC>().add(BLOC'S EVENT);
+                  
+                  //...(중략)...
+```
+
+###
+----
+###
+
+
 ## Widget child 속성에서 if / else 사용!?
 
 <p align="right">작성일 : 22.07.21</p>
