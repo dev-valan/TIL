@@ -40,6 +40,11 @@ module.exports = {
             },
 
             {
+                title: 'Flutter',
+                children: CONST.Flutter,
+            },
+
+            {
                 title: 'Git',
                 children: CONST.Git
             },
