@@ -57,13 +57,17 @@ env.development
 env.test
 
 // 로컬 환경 ( npm run build )
-env.production
+env.local
 
 // 상용 환경 ( npm run build )
 env.production
-
-
-
+```
+- 기본적으로 .env 파일은 우선순위가 높은 순으로 덮어쓰기 된다.
+```text
+// 우선순위
+npm start: .env.development.local > .env.development > .env.local > .env
+npm run build: .env.production.local > .env.production > .env.local, .env
+npm test: .env.test.local > .env.test > .env
 ```
 
 
