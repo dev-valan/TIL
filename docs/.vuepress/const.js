@@ -1,8 +1,17 @@
-exports.JavaScriptList = [
+exports.ReactJS = [
+    {
+        "title":"Create-React-App 환경변수 적용하기",
+        "path":"ReactJS/create-react-app-env"
+    },
     {
         "title":"Lazy Loading 적용기",
-        "path":"JavaScript/lazy_loading"
+        "path":"ReactJS/lazy_loading"
     },
+];
+
+
+
+exports.JavaScriptList = [
     {
         "title":"location.href VS location.replace",
         "path":"JavaScript/replace-vs-href"
