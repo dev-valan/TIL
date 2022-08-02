@@ -1,3 +1,44 @@
+## CocoaPods is installed but broken.
+
+<p align="right">작성일 : 22.08.02</p>
+
+### Error
+
+
+```Dart
+
+Warning: CocoaPods is installed but broken. Skipping pod install.
+  You appear to have CocoaPods installed but it is not working.
+  This can happen if the version of Ruby that CocoaPods was installed with is different from the one being used to invoke it.
+  This can usually be fixed by re-installing CocoaPods. For more info, see https://github.com/flutter/flutter/issues/14293.
+To re-install:
+
+```
+
+컴퓨터 재시작 후, 정상 작동 되던 Build 가 갑자기 안 됨.
+
+### Cause
+
+::: tip
+CocoaPod 가 모종의 이유로 손상되었을 때 발생
+:::
+
+
+### Solution
+> 간단하게 Android Studio 의 Cache 를 삭제하고 재시작하면 된다.
+
+```dart
+- Anroid Studio Menu -> File -> Invalidate Caches -> 재시작
+```
+![image](https://user-images.githubusercontent.com/107361759/182368201-7b15c2cd-7858-4070-a528-156e5b611b5b.png)
+
+###
+
+----
+###
+
+
+
 ## Could not find the correct Provider above this Widget
 
 <p align="right">작성일 : 22.07.25</p>
@@ -75,6 +116,7 @@ class _SuccessDialogLayout extends StatelessWidget{
 ```
 
 ###
+
 ----
 ###
 
