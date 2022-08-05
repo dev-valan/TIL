@@ -44,6 +44,10 @@ exports.Debug = [
 
 exports.Git = [
     {
+        "title":"기존 작업 프로젝트를 깃 Repo 에 연결하는 방법",
+        "path":"Git/link_gitrepo_exist_project"
+    },
+    {
         "title":"깃헙에서 Public Repo 를 Private Repo 로 Fork 하는 방법",
         "path":"Git/forked_public_to_private"
     },
