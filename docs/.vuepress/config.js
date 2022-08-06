@@ -57,6 +57,11 @@ module.exports = {
             {
                 title: 'Debug',
                 children: CONST.Debug
+            },
+
+            {
+                title: 'Etc',
+                children: CONST.Etc
             }
 
         ],

@@ -40,6 +40,12 @@ exports.Debug = [
     },
 ];
 
+exports.Etc = [
+    {
+        "title":"윈도우에서 Ubuntu 설치 및 WLS 셋팅",
+        "path":"Etc/window_ubuntu",
+    },
+];
 
 
 exports.Git = [
