@@ -55,6 +55,36 @@ Failed to connect to bus: Host is down
 
 ---------------------
 
+### Error 3.
+
+```
+wsl --set-version Ubuntu-20.04 2
+```
+
+위 명령어는 윈도우에 설치된 Ubuntu 의 Wsl version 을 변경하는 것이다.
+
+```
+변환이 진행 중입니다. 몇 분 정도 걸릴 수 있습니다...
+WSL 2와의 주요 차이점에 대한 자세한 내용은 https://aka.ms/wsl2를 참조하세요
+WSL 2에 커널 구성 요소 업데이트가 필요합니다. 자세한 내용은 https://aka.ms/wsl2kernel을 참조하십시오.
+```
+
+https://blog.dalso.org/linux/wsl2/11119
+
+위 링크 참조해서, 패키지를 설치하면 된다.
+
+![image](https://user-images.githubusercontent.com/107361759/183259323-5120c763-1c9e-4ecb-bf1a-27bc3bdaabe6.png)
+
+<패키지 설치 전>
+
+###
+
+![image](https://user-images.githubusercontent.com/107361759/183259338-e6d8179e-6ee9-42f3-8abf-a31706f5cc3d.png)
+
+<패키지 설치 후>
+
+-------------
+
 ### WLS 기본 유저 변경
 
 ```
