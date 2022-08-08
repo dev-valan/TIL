@@ -41,6 +41,11 @@ exports.Debug = [
 ];
 
 exports.Etc = [
+
+    {
+        "title":"MySQL 계정 생성 및 DB 권한 부여",
+        "path":"Etc/mysql_create_user",
+    },
     {
         "title":"윈도우에서 Ubuntu 설치 및 WLS 셋팅",
         "path":"Etc/window_ubuntu",
