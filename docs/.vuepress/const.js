@@ -19,6 +19,14 @@ exports.JavaScriptList = [
 ];
 
 
+exports.NextJS = [
+    {
+        "title":"Next.js Router feat.docs",
+        "path":"Next.js/pages"
+    },
+];
+
+
 exports.Flutter = [
     {
         "title":"Container 안의 Container Size 수정",

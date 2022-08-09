@@ -35,8 +35,13 @@ module.exports = {
 
         sidebar: [
             {
-                title: 'ReactJS',
+                title: 'React.js',
                 children: CONST.ReactJS,
+            },
+
+            {
+                title: 'Next.js',
+                children: CONST.NextJS,
             },
 
             {
