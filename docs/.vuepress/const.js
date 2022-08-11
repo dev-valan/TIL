@@ -13,6 +13,10 @@ exports.ReactJS = [
 
 exports.JavaScriptList = [
     {
+        "title":"Destructuring assignment (구조 분해 할당)",
+        "path":"JavaScript/destructuring_assignment"
+    },
+    {
         "title":"location.href VS location.replace",
         "path":"JavaScript/replace-vs-href"
     },
