@@ -1,3 +1,46 @@
+## Automatically assigning platform 'iOS' with version '13.0' on target 'Runner' because no platform was specified
+
+<p align="right">작성일 : 22.08.12</p>
+
+### Error
+
+
+```Dart
+[!] Automatically assigning platform `iOS` with version 
+`13.0` on target `Runner` because no platform was specified. 
+Please specify a platform for this target in your Podfile. 
+See `https://guides.cocoapods.org/syntax/podfile.html#platform`.
+```
+
+다른 브런치를 Check out 하고 나서, 발생한 에러.
+
+
+### Cause
+
+::: tip
+플랫폼이 지정되지 않았기 때문에 대상 
+`Runner`에 버전 `13.0`이 있는 `iOS` 플랫폼을 자동으로 할당합니다. 
+Podfile에서 이 대상에 대한 플랫폼을 지정하십시오. 'https://guides.cocoapods.org/syntax/podfile.html#platform'을 참조하세요.
+:::
+
+
+### Solution
+> Stack overflow 등에서 찾아보면, pod file 을 수정해줘야 하는 solution이 많았음.
+> 
+> 내 케이스에선, 간단하게 pod update 를 진행해주니 해결되었다.
+
+```dart
+cd ios
+pod update
+```
+
+###
+
+----
+###
+
+
+
 ## CocoaPods is installed but broken.
 
 <p align="right">작성일 : 22.08.02</p>
