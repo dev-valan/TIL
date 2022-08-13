@@ -53,7 +53,10 @@ exports.Debug = [
 ];
 
 exports.Etc = [
-
+    {
+        "title":"MySQL Cannot add foreign key constraint",
+        "path":"Etc/mysql_foreign_key_constraint",
+    },
     {
         "title":"MySQL 계정 생성 및 DB 권한 부여",
         "path":"Etc/mysql_create_user",
