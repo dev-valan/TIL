@@ -33,6 +33,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"Flutter 초기 환경 설정",
+        "path":"Flutter/initial_setting"
+    },
+    {
         "title":"Container 안의 Container Size 수정",
         "path":"Flutter/container_in_container"
     },
