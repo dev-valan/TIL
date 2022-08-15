@@ -1,5 +1,9 @@
 exports.ReactJS = [
     {
+        "title":"Redux란?",
+        "path":"ReactJS/redux"
+    },
+    {
         "title":"Create-React-App 환경변수 적용하기",
         "path":"ReactJS/create-react-app-env"
     },
