@@ -1,5 +1,9 @@
 exports.ReactJS = [
     {
+        "title":"Input 깔끔하게 handling 하기.",
+        "path":"ReactJS/input_handle_neatly"
+    },
+    {
         "title":"Redux란?",
         "path":"ReactJS/redux"
     },
