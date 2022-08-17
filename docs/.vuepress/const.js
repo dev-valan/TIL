@@ -66,6 +66,10 @@ exports.Debug = [
 
 exports.Etc = [
     {
+        "title":"MySQL table truncate",
+        "path":"Etc/mysql_truncate",
+    },
+    {
         "title":"MySQL Cannot add foreign key constraint",
         "path":"Etc/mysql_foreign_key_constraint",
     },
