@@ -41,6 +41,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"Flutter const",
+        "path":"Flutter/const"
+    },
+    {
         "title":"Flutter 초기 환경 설정",
         "path":"Flutter/initial_setting"
     },
