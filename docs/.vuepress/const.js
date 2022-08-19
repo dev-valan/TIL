@@ -41,6 +41,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"const vs final",
+        "path":"Flutter/const_final"
+    },
+    {
         "title":"Flutter const",
         "path":"Flutter/const"
     },
