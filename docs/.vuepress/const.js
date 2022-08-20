@@ -74,6 +74,10 @@ exports.Debug = [
 
 exports.Etc = [
     {
+        "title":"ESLint 따옴표 설정 변경 (quotes)",
+        "path":"Etc/eslint_quites_setting",
+    },
+    {
         "title":"MySQL table truncate",
         "path":"Etc/mysql_truncate",
     },
