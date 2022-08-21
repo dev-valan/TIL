@@ -74,6 +74,10 @@ exports.Debug = [
 
 exports.Etc = [
     {
+        "title":"빌드 시 ESLint error 무시하기",
+        "path":"Etc/eslint_build_error",
+    },
+    {
         "title":"ESLint 따옴표 설정 변경 (quotes)",
         "path":"Etc/eslint_quites_setting",
     },
