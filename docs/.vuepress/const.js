@@ -33,6 +33,10 @@ exports.JavaScriptList = [
 
 exports.NextJS = [
     {
+        "title":"Next.js build time 개선",
+        "path":"Next.js/nextjs_build_time"
+    },
+    {
         "title":"Next.js Router feat.docs",
         "path":"Next.js/pages"
     },
