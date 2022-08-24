@@ -45,6 +45,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"late",
+        "path":"Flutter/late"
+    },
+    {
         "title":"const vs final",
         "path":"Flutter/const_final"
     },
