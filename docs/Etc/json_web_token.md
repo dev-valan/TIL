@@ -120,6 +120,7 @@ JWS가 Claims 를 암호화 하지 않고, Base 64 로 인코딩만 할 뿐이�
 :::
 
 ![image](https://user-images.githubusercontent.com/107361759/187082389-3b35525b-b630-4c16-9c80-783c35b041d2.png)
+
 </details>
 
 ```javascript
