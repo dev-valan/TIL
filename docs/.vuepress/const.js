@@ -82,6 +82,10 @@ exports.Debug = [
 
 exports.Etc = [
     {
+        "title":"Json Web Token",
+        "path":"Etc/json_web_token",
+    },
+    {
         "title":"빌드 시 ESLint error 무시하기",
         "path":"Etc/eslint_build_error",
     },
