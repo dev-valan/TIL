@@ -46,6 +46,10 @@ exports.NextJS = [
 exports.Flutter = [
     {
         "title":"late",
+        "path":"Flutter/fractionally_sizedbox"
+    },
+    {
+        "title":"late",
         "path":"Flutter/late"
     },
     {
