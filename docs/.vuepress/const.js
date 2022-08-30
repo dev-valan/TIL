@@ -45,7 +45,11 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
-        "title":"late",
+        "title":"column height : mainAxisSize",
+        "path":"Flutter/column_widget"
+    },
+    {
+        "title":"fractionallySizedBox",
         "path":"Flutter/fractionally_sizedbox"
     },
     {
