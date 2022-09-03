@@ -86,6 +86,10 @@ exports.Debug = [
         "title":"ReactJS",
         "path":"Debug/ReactJS"
     },
+    {
+        "title":"NextJS",
+        "path":"Debug/NextJS"
+    },
 ];
 
 exports.Etc = [
