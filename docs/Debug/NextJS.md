@@ -1,3 +1,50 @@
+## TS2339: Property 'xx' does not exist on type 'JSX.IntrinsicElements'.
+<p align="right">작성일 : 22.09.05</p>
+
+### Error
+
+
+```javascript
+
+TS2339: Property 'xx' does not exist on type 'JSX.IntrinsicElements'.
+
+```
+
+Styled Component 를 TS 를 사용해 작성하던 중 발생한 에러
+
+### Cause
+
+::: tip
+
+TS 에서 컴포넌트 첫 시작 문자를 소문자로 시작했기 때문에 발생.
+
+
+:::
+
+
+
+### Solution
+> 컴포넌트를 작성할때, 첫 문자를 대문자로 작성해준다.
+
+```typescript
+const headerStyle = styled.div`
+  display: flex;
+  height: 60px;
+  align-items: center;
+`;
+
+//에서 headerStyle -> HeaderStyle 로 변경하면 에러가 사라짐.
+```
+
+
+###
+
+----
+###
+
+
+
+
 ## next.js with typeScript module not found
 <p align="right">작성일 : 22.09.03</p>
 
