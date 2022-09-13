@@ -1,3 +1,30 @@
+## The "inspector" screen is not available for this application.
+
+<p align="right">작성일 : 22.09.13</p>
+
+### Error
+![image](https://user-images.githubusercontent.com/107361759/189817827-a7fead98-2964-4d58-8b8b-12164b235063.png)
+어느 순간 부터, inspector 가 제대로 실행되지 않음.
+
+### Solution
+https://stackoverflow.com/questions/51181774/flutter-widget-inspector-not-displaying   
+참고하여 수정함.
+```
+1. Android Studio > Preferences > Languages & Frameworks > Flutter > App Execution > Open Flutter Inspector view on launch
+
+2. Close and Relaunch Android Studio > Open any Flutter Project > Open iOS Simulator or Android Emulator and Run Debug Mode
+
+3. View > Tool Window > Flutter Inspector
+
+PS: In order for something to show up in the Flutter Inspector, your app has to be running on a Device or on a Simulator or Emulator.
+```
+
+
+<p></p>
+
+--------
+
+
 ## Automatically assigning platform 'iOS' with version '13.0' on target 'Runner' because no platform was specified
 
 <p align="right">작성일 : 22.08.12</p>
