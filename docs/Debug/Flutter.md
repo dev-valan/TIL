@@ -1,3 +1,50 @@
+
+## Bottom overflowed by xxx pixels
+
+<p align="right">작성일 : 22.09.14</p>
+
+### Error
+
+Bottom overflowed by xxx pixels   
+
+![image](https://user-images.githubusercontent.com/107361759/190152930-3c732c6d-ee8c-4306-b036-d4c6aab0f447.png)
+
+TextField Widget 이 있는 경우, 하드웨어 키보드가 올라 올 때마다 위 에러가 뜬다.
+
+
+### Solution
+```dart
+    ...
+
+  child: Scaffold(
+     resizeToAvoidBottomInset : false,
+
+    ...
+```
+1. Scaffold 및에 resizeToAvoidBottomInset 속성을 false로 준다.
+2. Scaffold body 의 하위 위젯을 SingleChildScrollView 등의 Scrollable 위젯으로 감싼다.
+
+
+
+resizeToAvoidBottomInset 속성
+
+::: tip
+
+if true the body and the scaffold's floating widgets should size themselves to avoid the onscreen keyboard whose height is defined by the ambient MediaQuery's MediaQueryData.viewInsets bottom property.
+For example, if there is an onscreen keyboard displayed above the scaffold, the body can be resized to avoid overlapping the keyboard, which prevents widgets inside the body from being obscured by the keyboard.
+Defaults to true.
+
+:::
+
+요약하자면, scaffold 의 body 와 floating 위젯들이 하드웨어 키보드에 가려지는 것을 막기 위해
+크기를 자동으로 조정하는 것을 설정하는 속성이다.  
+기본값이 true 라 해당 문제가 발생함.  
+false 로 변경해주자.
+
+
+-------------
+
+
 ## The "inspector" screen is not available for this application.
 
 <p align="right">작성일 : 22.09.13</p>
