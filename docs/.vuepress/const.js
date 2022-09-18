@@ -45,6 +45,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"TextField Suffix",
+        "path":"Flutter/textfield_suffix"
+    },
+    {
         "title":"column height : mainAxisSize",
         "path":"Flutter/column_widget"
     },

@@ -1,3 +1,77 @@
+
+## Bottom overflowed by xxx pixels
+
+<p align="right">작성일 : 22.09.14</p>
+
+### Error
+
+Bottom overflowed by xxx pixels   
+
+![image](https://user-images.githubusercontent.com/107361759/190152930-3c732c6d-ee8c-4306-b036-d4c6aab0f447.png)
+
+TextField Widget 이 있는 경우, 하드웨어 키보드가 올라 올 때마다 위 에러가 뜬다.
+
+
+### Solution
+```dart
+    ...
+
+  child: Scaffold(
+     resizeToAvoidBottomInset : false,
+
+    ...
+```
+1. Scaffold 및에 resizeToAvoidBottomInset 속성을 false로 준다.
+2. Scaffold body 의 하위 위젯을 SingleChildScrollView 등의 Scrollable 위젯으로 감싼다.
+
+
+
+resizeToAvoidBottomInset 속성
+
+::: tip
+
+if true the body and the scaffold's floating widgets should size themselves to avoid the onscreen keyboard whose height is defined by the ambient MediaQuery's MediaQueryData.viewInsets bottom property.
+For example, if there is an onscreen keyboard displayed above the scaffold, the body can be resized to avoid overlapping the keyboard, which prevents widgets inside the body from being obscured by the keyboard.
+Defaults to true.
+
+:::
+
+요약하자면, scaffold 의 body 와 floating 위젯들이 하드웨어 키보드에 가려지는 것을 막기 위해
+크기를 자동으로 조정하는 것을 설정하는 속성이다.  
+기본값이 true 라 해당 문제가 발생함.  
+false 로 변경해주자.
+
+
+-------------
+
+
+## The "inspector" screen is not available for this application.
+
+<p align="right">작성일 : 22.09.13</p>
+
+### Error
+![image](https://user-images.githubusercontent.com/107361759/189817827-a7fead98-2964-4d58-8b8b-12164b235063.png)
+어느 순간 부터, inspector 가 제대로 실행되지 않음.
+
+### Solution
+https://stackoverflow.com/questions/51181774/flutter-widget-inspector-not-displaying   
+참고하여 수정함.
+```
+1. Android Studio > Preferences > Languages & Frameworks > Flutter > App Execution > Open Flutter Inspector view on launch
+
+2. Close and Relaunch Android Studio > Open any Flutter Project > Open iOS Simulator or Android Emulator and Run Debug Mode
+
+3. View > Tool Window > Flutter Inspector
+
+PS: In order for something to show up in the Flutter Inspector, your app has to be running on a Device or on a Simulator or Emulator.
+```
+
+
+<p></p>
+
+--------
+
+
 ## Automatically assigning platform 'iOS' with version '13.0' on target 'Runner' because no platform was specified
 
 <p align="right">작성일 : 22.08.12</p>
