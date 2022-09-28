@@ -1,3 +1,28 @@
+## TS1259: Module 'PATH' can only be default-imported using the 'esModuleInterop' flag
+
+<p align="right">작성일 : 22.09.18</p>
+
+### Error
+
+
+```javascript
+TS1259: Module 'PATH' can only be default-imported using the 'esModuleInterop' flag
+```
+
+next.js 로 만든 프로젝트의 초기 설정 중, module 을 제대로 import 하지 못함.
+
+
+### Solution
+> npm run next dev 로 프로젝트를 실행하면, tsconfig.json 이 자동으로 생성됨.   
+> 이후, 제대로 import 되는 것을 볼 수 있다.
+
+
+###
+
+
+
+------
+
 ## TS2339: Property 'xx' does not exist on type 'JSX.IntrinsicElements'.
 <p align="right">작성일 : 22.09.05</p>
 
