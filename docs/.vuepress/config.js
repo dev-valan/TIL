@@ -55,6 +55,11 @@ module.exports = {
             },
 
             {
+                title: 'Python',
+                children: CONST.Python,
+            },
+
+            {
                 title: 'Git',
                 children: CONST.Git
             },

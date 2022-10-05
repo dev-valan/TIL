@@ -142,3 +142,12 @@ exports.Git = [
         "path":"Git/edit_local_config"
     },
 ];
+
+
+exports.Python = [
+    {
+        "title":"python 에는 null 이 없다?",
+        "path":"Python/python_null_free"
+    },
+
+];
