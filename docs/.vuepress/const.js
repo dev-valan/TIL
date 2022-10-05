@@ -45,6 +45,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"Flutter Font 적용하기",
+        "path":"Flutter/font"
+    },
+    {
         "title":"TextField Suffix",
         "path":"Flutter/textfield_suffix"
     },
