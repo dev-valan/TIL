@@ -45,6 +45,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"Widget에 Slide 애니메이션 추가하기",
+        "path":"Flutter/slide_transition"
+    },
+    {
         "title":"Flutter Font 적용하기",
         "path":"Flutter/font"
     },
