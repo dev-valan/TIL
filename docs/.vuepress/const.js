@@ -45,6 +45,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"Flutter Auto Route",
+        "path":"Flutter/auto_routing.md"
+    },
+    {
         "title":"Gesture Detector behavior",
         "path":"Flutter/gesturedetector_behavior.md"
     },
