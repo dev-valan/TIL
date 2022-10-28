@@ -1,4 +1,27 @@
 
+## Custom font is not working in iOS.
+
+<p align="right">작성일 : 22.10.28</p>
+
+### Error
+
+> Text Widget 에 Font Family 를 적용하던 중, 
+> iOS 에서 Text Widget 이 제대로 나타나지 않는 현상 발생
+
+### Solution
+
+- 처음 적용한 방식은 ```.ttf``` 형태의 파일이 아닌, ```.otf``` 형태의 파일을 적용 해 보았으나, 해결되지 않았다.
+- 문제가 발생한 Font 는 ```Gotham``` 이라는 유료 폰트였는데, Flutter 자체의 문제로 보인다.
+```Gotham``` 폰트가 iOS 에서 문제가 된다고 issue 가 올라왔다.
+- https://github.com/flutter/flutter/issues/83616
+
+- 애석하게도, 다른 Font 로 교체하는 것으로 해결했다.
+
+
+-------------
+
+
+
 ## Bottom overflowed by xxx pixels
 
 <p align="right">작성일 : 22.09.14</p>
