@@ -45,6 +45,10 @@ exports.NextJS = [
 
 exports.Flutter = [
     {
+        "title":"Flutter Mixin",
+        "path":"Flutter/mixin.md"
+    },
+    {
         "title":"Flutter Auto Route",
         "path":"Flutter/auto_routing.md"
     },
