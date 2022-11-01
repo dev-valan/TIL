@@ -23,17 +23,23 @@ module.exports = {
     themeConfig: {
         nav:
             [
+                // {
+                //     text: 'GitHub',
+                //     link: 'https://github.com/dev-valan/'
+                // },
                 {
-                    text: 'GitHub',
-                    link: 'https://github.com/dev-valan/'
-                }, {
-                text: 'Blogs',
-                link: 'https://valan.tistoy.com/'
-            }
+                    text: 'RESUME',
+                    link: 'https://valanlog.notion.site/Valan-b91bd2f277ef4c10b4327839af2b865d'
+                }
             ],
 
 
         sidebar: [
+
+            {
+                title: 'Flutter',
+                children: CONST.Flutter,
+            },
             {
                 title: 'React.js',
                 children: CONST.ReactJS,
@@ -47,11 +53,6 @@ module.exports = {
             {
                 title: 'JavaScript',
                 children: CONST.JavaScriptList,
-            },
-
-            {
-                title: 'Flutter',
-                children: CONST.Flutter,
             },
 
             {
