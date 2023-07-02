@@ -1,4 +1,26 @@
 
+## Error: CocoaPods's specs repository is too out-of-date to satisfy dependencies.
+
+<p align="right">작성일 : 23.07.02</p>
+
+### Error
+
+> Flutter version update 후 iOS build 시 발생.
+
+
+### Solution
+
+- /ios/podFile.lock 파일을 삭제
+- pod install --repo-update
+- flutter clean
+- flutter pub get
+- 재실행
+
+<br>
+
+-------------
+
+
 ## Custom font is not working in iOS.
 
 <p align="right">작성일 : 22.10.28</p>
